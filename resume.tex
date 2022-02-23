@@ -1,0 +1,44 @@
+\documentclass[letter,10pt]{article}
+\usepackage[utf8]{inputenc}
+
+%====================
+% File:         resume.tex
+% Editor:       https://github.com/TimmyChan 
+%               https://www.linkedin.com/in/timmy-l-chan/
+% Last Updated: Jan 7th, 2022
+% Notes:        All formatting is done in TLCresume.sty
+%               No need to touch that file. 
+%               All actual content is in the sections/ folder.
+%====================
+
+\usepackage{TLCresume}
+\usepackage{multicol}
+
+%====================
+% CONTACT INFORMATION
+%====================
+\def\name{William Racsek} % Name Here
+\def\phone{414.217.1615}
+\def\city{Milwaukee, WI}
+\def\email{binary0010@gmail.com}
+\def\LinkedIn{william-racsek} % linkedin.com/in/______
+\def\github{C0den} % github username
+\def\role{Director, Threat Detection \& Response} % JOB TITLE
+
+\input{_header}
+\begin{document}
+%\input{sections/objective}
+\section{Key Security Competencies}
+\input{sections/activities}
+\section{Education}
+\input{sections/education}
+\section{Technical Experience}
+\input{sections/experience}
+
+% make a newpage wherever it is a clean break
+% \newpage
+
+\section{Skills}
+\input{sections/skills}
+
+\end{document}
